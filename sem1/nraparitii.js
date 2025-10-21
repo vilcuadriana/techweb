@@ -13,7 +13,3 @@ function occurences(text,character)
 }
 
 console.log(occurences("sample text","e"));
-
-
-
-
