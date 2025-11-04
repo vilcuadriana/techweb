@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Evenimente și evenimente custom</title>
+  <script>
+    window.onload = () => {
+      const input = document.getElementById("nameInput");
+      const message = document.getElementById("message");
+
+   
+      const customEvt = new Event("customEvt");
+
+      const inputHandler = (e) => {
+        console.log("Utilizatorul tastează:", e.target.value);
+
+        
+        document.dispatchEvent(customEvt);
+      };
+
+      
+      const customHandler = () => {
+        message.textContent = "Eveniment custom declanșat!";
+        message.style.color = "green";
+        console.log("Evenimentul custom a fost tratat!");
+      };
+
+     
+      input.addEventListener("input", inputHandler);
+      document.addEventListener("customEvt", customHandler);
+    };
+  </script>
+</head>
+
+<body>
+  <h2>Introdu un nume:</h2>
+  <input type="text" id="nameInput" placeholder="Scrie ceva..." />
+  <p id="message"></p>
+</body>
+
+</html>

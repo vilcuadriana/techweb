@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agenda - GET/POST</title>
+</head>
+<body>
+  <h1>Gestionează lista de persoane</h1>
+
+  <!-- Formular pentru adăugare (POST) -->
+  <div>
+    <h3>Adaugă o persoană nouă</h3>
+    <form>
+      <input id="inputName" type="text" placeholder="Nume">
+      <br /><br />
+      <input id="inputAge" type="number" placeholder="Vârstă">
+      <br /><br />
+      <input value="Adaugă" onclick="sendData()" type="button">
+      <br /><br />
+    </form>
+  </div>
+
+  <hr>
+
+  <!-- Formular pentru căutare după ID (GET) -->
+  <div>
+    <h3>Caută persoană după ID</h3>
+    <form>
+      <input id="inputId" type="number" placeholder="Introdu ID-ul">
+      <br /><br />
+      <input value="Caută" onclick="getById()" type="button">
+      <br /><br />
+    </form>
+  </div>
+
+  <div id="resultById"></div>
+
+  <hr>
+
+  <!-- Tabelul cu toate persoanele -->
+  <div id="tableData"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
