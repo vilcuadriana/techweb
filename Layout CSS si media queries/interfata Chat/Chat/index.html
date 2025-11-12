@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thatsapp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search or start chat" id="search">
+      </div>
+
+      <div class="contacts">
+        <div class="contact">
+          <div class="avatar">J</div>
+          <div class="contact-container">
+            <div class="name">Jim</div>
+            <div class="status">Online</div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="avatar">A</div>
+          <div class="contact-container">
+            <div class="name">Alice</div>
+            <div class="status">Last seen 5m ago</div>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="avatar">B</div>
+          <div class="contact-container">
+            <div class="name">Bob</div>
+            <div class="status">Typing...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="chat-heading">
+      <div class="avatar">J</div>
+      <div class="interlocutor">
+        <div class="name">Jim</div>
+        <div class="status">Online</div>
+      </div>
+    </div>
+
+    <div class="chat">
+      <div class="message from-me">
+        <div class="content">Hey Jim, how are you?</div>
+        <div class="time">10:15</div>
+      </div>
+      <div class="message from-them">
+        <div class="content">Hey! All good, working on CSS Grid 😎</div>
+        <div class="time">10:16</div>
+      </div>
+      <div class="message from-me">
+        <div class="content">Nice! Send me your code later.</div>
+        <div class="time">10:18</div>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" placeholder="Type a message..." />
+      <button>&#9658;</button>
+    </div>
+  </div>
+</body>
+</html>
