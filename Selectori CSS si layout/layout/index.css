@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.board {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+
+.top-left, .top-middle, .top-right {
+    border-top: none;
+}
+
+.bottom-left, .bottom-middle, .bottom-right {
+    border-bottom: none;
+}
+
+.top-left, .middle-left, .bottom-left {
+    border-left: none;
+}
+
+.top-right, .middle-right, .bottom-right {
+    border-right: none;
+}
